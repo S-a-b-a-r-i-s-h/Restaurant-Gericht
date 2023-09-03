@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --font-base: 'Cormorant Upright', serif;
+  --font-alt: 'Open Sans', sans-serif;
+  
+  --color-golden1: #DCCA87;
+  --color-black: #0C0C0C;
+  --color-gray: #545454;
+  --color-crimson: #F5EFDB;
+  --color-grey: #AAAAAA;
+  --color-white: #FFFFFF;
+  --color-golden:#dbbb48;
+}
+.right{
+  flex: 1;
+  width: 20vw;
+  height: 25vw;
+  border: 2px solid black;
+  padding: 0px ;
+  scale: 1;
+}
+.img-css{
+  position: absolute;
+  width: 199px;
+  height: 57px;
+
+  background: url(gericht.png);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.slide-bottom {
+  -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes slide-bottom {
+  0% {
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.slide-up {
+  -webkit-animation: slide-up 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-up 0.5s cubic-bezier(0.250,0.460, 0.450,0.940) both;
+  transition: 0.5s ease;
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
+  }
+}
+/* gericht 1 */
+
+
